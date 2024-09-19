@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: Lightskyblue;
+        }
+        table {
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+    </style>
+    <script>
+        function submitForm() {
+            alert("Submitted");
+            document.getElementById("registrationForm").reset();
+        }
+    </script>
+</head>
+<body>
+    <br><br>
+    <form id="registrationForm" onsubmit="submitForm(); return false;">
+        <table>
+            <tr>
+                <td><label>Firstname:</label></td>
+                <td><input type="text" name="firstname" size="15"/></td>
+            </tr>
+            <tr>
+                <td><label>Middlename:</label></td>
+                <td><input type="text" name="middlename" size="15"/></td>
+            </tr>
+            <tr>
+                <td><label>Lastname:</label></td>
+                <td><input type="text" name="lastname" size="15"/></td>
+            </tr>
+            <tr>
+                <td><label>Course:</label></td>
+                <td>
+                    <select>
+                        <option value="Course">Course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"/> Male<br>
+                    <input type="radio" name="gender" value="female"/> Female<br>
+                    <input type="radio" name="gender" value="other"/> Other
+                </td>
+            </tr>
+            <tr>
+                <td><label>Phone:</label></td>
+                <td>
+                    <input type="text" name="country code" value="+91" size="2"/>
+                    <input type="text" name="phone" size="10"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td><textarea cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" id="email" name="email"/></td>
+            </tr>
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" id="pass" name="pass"/></td>
+            </tr>
+            <tr>
+                <td><label>Re-type password:</label></td>
+                <td><input type="password" id="repass" name="repass"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
